@@ -2,7 +2,7 @@ echo -e "\e[35mInstalling MySQL Server\e[0m"
 dnf install mysql-server -y
 echo exit status - $?
 
-echo -e "\e[35Start Nginx Service\e[0m"
+echo -e "\e[35mStart Nginx Service\e[0m"
 systemctl enable mysqld
 systemctl start mysqld
 echo exit status - $?
