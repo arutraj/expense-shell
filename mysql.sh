@@ -1,3 +1,6 @@
+source common.sh
+rm -f /tmp/expense.log
+
 echo -e "\e[35mInstalling MySQL Server\e[0m"
 dnf install mysql-server -y
 echo exit status - $?
