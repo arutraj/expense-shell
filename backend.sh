@@ -14,7 +14,7 @@ dnf install nodejs -y &>>/tmp/expense.log
 STAT $?
 
 HEADING "Add Expense User"
-id expnese &>>/tmp/expense.log
+id expense &>>/tmp/expense.log
 if [ $? -ne 0 ]; then
   useradd expense &>>/tmp/expense.log
 fi
