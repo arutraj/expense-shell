@@ -14,7 +14,10 @@ dnf install nodejs -y &>>/tmp/expense.log
 STAT $?
 
 HEADING "Add Expense User"
-useradd expense &>>/tmp/expense.log
+id expnese &>>/tmp/expense.log
+if [ $? -ne 0 ]; then
+  useradd expense &>>/tmp/expense.log
+fi
 STAT $?
 
 HEADING "Setup Backend Service"
